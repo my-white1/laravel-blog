@@ -54,8 +54,8 @@
                         <div class="card-header">Search</div>
                         <div class="card-body">
                             <div class="input-group mb-3">
-                                <input name="search" value="{{ request('search') }}" class="form-control"
-                                    placeholder="{{ __('Search') }}" />
+                                {{-- <input name="search" value="{{ request('search') }}" class="form-control" --}}
+                                    {{-- placeholder="{{ __('Search') }}" /> --}}
                                 <button type="submit" class=" btn btn-primary">{{ __('Search') }}</button>
                             </div>
                             <div class="input-group">
@@ -66,7 +66,7 @@
                                 <select class="form-control" name="category_id">
                                     <option value="">Choose category</option>
                                     @foreach ($categories as $key => $category)
-                                        <option value="{{ $key }}">{{ $category->name }}</option>
+                                        <option value="{{ $category->id }}">{{ $category->name }}</option>
                                     @endforeach
                                 </select>
                             </div>

@@ -23,7 +23,7 @@ Route::delete('/categories/destroy/{category}' , [CategoryController::class , 'd
 
 
 
-Route::get('/post' , [PostController::class , 'index'])->name('post');
+Route::redirect('/post' , '/')->name('post');
 Route::get('/post/show/{post}' , [PostController::class , 'show'])->name('post.show');
 Route::get('/post/edit/{post}' , [PostController::class , 'edit'])->name('post.edit');
 Route::post('/post/update/{post}' , [PostController::class , 'update'])->name('post.update');

@@ -52,10 +52,12 @@ class PostController extends Controller
     {
 
         $request->validate([
-            'name' => 'required|max:255',
+            'title' => 'required|max:255',
             'description' => 'required',
-            'category_id' => 'required',
+            // 'category_id' => 'required',
         ]);
+
+        // dd($request->input('title') , $request->input('description') , $request->input('category_id'));
 
         Post::create($request->all());
 

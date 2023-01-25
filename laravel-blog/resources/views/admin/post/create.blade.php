@@ -19,7 +19,7 @@
                     <select class="form-control mb-3" name="category_id">
                         <option value="">Choose category</option>
                         @foreach ($categories as $key => $category)
-                            <option value="{{ $key }}">{{ $category->name }}</option>
+                            <option value="{{ $category->id }}">{{ $category->name }}</option>
                         @endforeach
                     </select>
                 </div>
