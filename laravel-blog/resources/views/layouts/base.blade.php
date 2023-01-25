@@ -12,6 +12,7 @@
         <link href="{{ asset('front/css/styles.css') }}" rel="stylesheet" />
     </head>
     <body>
+        @include('includes.alert')
         @include('includes.header')
         <!-- Page header with logo and tagline-->
         <header class="py-5 bg-light border-bottom mb-4">

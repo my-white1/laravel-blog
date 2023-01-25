@@ -70,6 +70,9 @@
                                     @endforeach
                                 </select>
                             </div>
+                            <div class="input-group mt-3">
+                                <a href="{{ route('post.create') }}" class="btn btn-success">Create</a>
+                            </div>
                         </div>
                     </div>
                 </form>
